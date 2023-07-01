@@ -10,6 +10,10 @@
     <main>
       <article class="product">
         <picture class="product__img">
+          <source
+            srcset="./img/image-product-desktop.jpg"
+            media="(min-width: 600px)"
+          />
           <img src="./img/image-product-mobile.jpg" alt="Product Image" />
         </picture>
 
@@ -28,7 +32,9 @@
             <p class="product__original-price">$169.99</p>
           </div>
 
-          <button class="button" type="button">Add to Cart</button>
+          <button class="button" type="button" data-icon="shopping-cart">
+            Add to Cart
+          </button>
         </div>
       </article>
     </main>
