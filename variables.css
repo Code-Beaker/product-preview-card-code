@@ -4,10 +4,10 @@
   --font-title: "Fraunces", cursive;
   --font-body: "Montserrat", sans-serif;
 
-  --fw-medium: 500;
+  --fw-regular: 500;
   --fw-bold: 700;
 
-  --size-para: 14px;
+  --fs-para: 14px;
 
   --clr-primary-400: hsl(158, 36%, 37%);
   --clr-secondary-200: hsl(30, 38%, 92%);

@@ -1,3 +1,4 @@
+@import "./variables.css";
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -53,6 +54,13 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
 /*
     8. Create a root stacking context
   */
@@ -64,6 +72,49 @@ h6 {
 /* general styling */
 body {
   font-family: var(--font-body);
-  font-weight: var(--fw-medium);
-  color: var(--);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-secondary-200);
+
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
+}
+
+/* utilities */
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* product styles */
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+
+  background-color: var(--clr-neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.product__content {
+  /* border: 3px solid red; */
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+
+.product__category {
+  letter-spacing: 5px;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.product__title {
+  font-size: 2rem;
+  font-family: var(--font-title);
+  color: var(--clr-neutral-900);
 }
